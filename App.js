@@ -1,13 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import registrarUsuario from './src/screens/registrarUsuario'
+import { NavigationContainer} from '@react-navigation/native';
+import { createStackNavigator } from "@react-navigation/stack";
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to star</Text>
-      <StatusBar style="auto" />
-    </View>
+    //Cambiar mi pantalla por la suya cuando este la pantalla principal alli si la pone de una vez para yo ir haciendo  la navegacion
+    /*<NavigationContainer>
+
+        <Stack.Navigator initialRouteName="registrarUsuario" headerMode = 'none'>
+          <Stack.Screen name="registrarUsuario" component={registrarUsuario} />
+         
+        </Stack.Navigator>
+          
+      </NavigationContainer>*/      
   );
 }
 
